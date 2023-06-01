@@ -1,0 +1,133 @@
+
+body {
+	padding-left:20px;
+	padding-right: 20px;
+}
+
+/* text positon */
+	
+#plain_text_one {
+	position: absolute;
+	left: 8%;
+	top: 70px;
+}
+
+#plain_text_two {
+	position: absolute;
+	left: 8%;
+	top: 90px;
+}
+
+
+#logo {
+	position: absolute;
+	left: 8%;
+	font-weight: bold;
+	font-size:22px;
+}
+
+/* laptop */
+
+#photo-column {
+	display: grid;
+	grid-template-columns: 20% 1fr 20%;
+}
+
+#studio-button {
+	position: absolute;
+	top: 85px;
+	left: 8%;
+}
+
+#field-button {
+	position: absolute;
+	top: 110px;
+	left: 8%;
+}
+
+#product-button {
+	position: absolute;
+	top: 135px;
+	left: 8%;
+
+}
+
+
+/* phone */
+
+@media (max-width: 800px ) {
+	#photo-column {
+		display: grid;
+		grid-template-columns: 10% 1fr 10%;
+	}
+
+	#studio-button {
+	position: absolute;
+	top: 85px;
+	left: 8%;
+	}
+
+	#field-button {
+	position: absolute;
+	top: 85px;
+	left: calc(8% + 50px);
+	}
+
+	#product-button {
+	position: absolute;
+	top: 85px;
+	left: calc(8% + 90px);
+	}
+}
+
+/* photo dimensions */
+
+.horizontal-photo { 
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+ }
+
+ .vertical-photo {
+ 	width: 70%;
+ 	margin-top: 30px;
+ 	margin-bottom: 30px;
+ 	margin-left: 15%;
+ }
+
+a {
+	text-decoration: none;
+}
+
+/* buttons for 35mm page */
+
+#info-button {
+	color: blue;
+	position: absolute;
+	right: calc(8% + 130px);
+}
+
+#portfolio-button {
+	color: grey;
+	position: absolute;
+	right: calc(8% + 57px);
+}
+
+#contact-button {
+	color: grey;
+	position: absolute;
+	right: 8%;
+}
+
+#portfolio-button:hover, #contact-button:hover {
+	color: blue;
+}
+
+/* --------- padding for logo section -------- */ 
+
+#navigate {
+	padding: 25px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
